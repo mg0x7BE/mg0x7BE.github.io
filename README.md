@@ -1,9 +1,9 @@
 
-![GitHub repo size](https://img.shields.io/github/repo-size/MaxGripe/repository-template)
-![GitHub License](https://img.shields.io/github/license/MaxGripe/repository-template)
-![GitHub Created At](https://img.shields.io/github/created-at/MaxGripe/repository-template)
-![GitHub forks](https://img.shields.io/github/forks/MaxGripe/repository-template)
-![GitHub Repo stars](https://img.shields.io/github/stars/MaxGripe/repository-template)
+![GitHub repo size](https://img.shields.io/github/repo-size/MaxGripe/maxgripe.github.io)
+![GitHub License](https://img.shields.io/github/license/MaxGripe/maxgripe.github.io)
+![GitHub Created At](https://img.shields.io/github/created-at/MaxGripe/maxgripe.github.io)
+![GitHub forks](https://img.shields.io/github/forks/MaxGripe/maxgripe.github.io)
+![GitHub Repo stars](https://img.shields.io/github/stars/MaxGripe/maxgripe.github.io)
 
 
 # Template Repository
