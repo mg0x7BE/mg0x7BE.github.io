@@ -1,0 +1,15 @@
+<script src="https://giscus.app/client.js"
+        data-repo="MaxGripe/max-gripe-homepage"
+        data-repo-id="R_kgDOMMEg0A"
+        data-category="Article Comments"
+        data-category-id="DIC_kwDOMMEg0M4Cgod0"
+        data-mapping="pathname"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="dark_dimmed"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
