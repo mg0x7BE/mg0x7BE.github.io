@@ -1,21 +1,23 @@
 
-[![Azure Static Web Apps CI/CD](https://github.com/MaxGripe/max-gripe-homepage/actions/workflows/main.yml/badge.svg)](https://github.com/MaxGripe/max-gripe-homepage/actions/workflows/main.yml)
-![GitHub repo size](https://img.shields.io/github/repo-size/MaxGripe/max-gripe-homepage)
-![GitHub License](https://img.shields.io/github/license/MaxGripe/max-gripe-homepage)
-![GitHub Created At](https://img.shields.io/github/created-at/MaxGripe/max-gripe-homepage)
-![GitHub forks](https://img.shields.io/github/forks/MaxGripe/max-gripe-homepage)
-![GitHub Repo stars](https://img.shields.io/github/stars/MaxGripe/max-gripe-homepage)
+[![Azure Static Web Apps CI/CD](https://github.com/MaxGripe/maxgripe.github.io/actions/workflows/main.yml/badge.svg)](https://github.com/MaxGripe/maxgripe.github.io/actions/workflows/main.yml)
+![GitHub repo size](https://img.shields.io/github/repo-size/MaxGripe/maxgripe.github.io)
+![GitHub License](https://img.shields.io/github/license/MaxGripe/maxgripe.github.io)
+![GitHub Created At](https://img.shields.io/github/created-at/MaxGripe/maxgripe.github.io)
+![GitHub forks](https://img.shields.io/github/forks/MaxGripe/maxgripe.github.io)
+![GitHub Repo stars](https://img.shields.io/github/stars/MaxGripe/maxgripe.github.io)
 
 # Max Gripe's Homepage
-Welcome to my [homepage](https://max.gripe/)! It serves as a platform for me to share my links and thoughts.
+Welcome to my [homepage](https://maxgripe.github.io/)! It serves as a platform for me to share my links and thoughts. At the moment, I've got a really cool domain https://max.gripe linked to this site, but I won't live forever, so the address https://maxgripe.github.io is more future-proof.
 
 ## Some technical details:
 
-- This website is hosted on [Azure](https://azure.microsoft.com/) using free plan. 
+- This website is hosted on GitHub Pages. 
 
 - Articles and other content are written in Markdown, allowing for easy content creation and management. These Markdown files are automatically converted to HTML during the build process using [F#](https://fsharp.org/) and the [FSharp.Formatting](https://fsprojects.github.io/FSharp.Formatting/) library.
 
 - The deployment process is fully automated using [GitHub Actions](https://github.com/features/actions). Any changes to this repository are immediately reflected on the live site.
+
+- This site also uses the [giscus](https://giscus.app/) comment system.
 
 ## Folder structure
 
@@ -40,7 +42,7 @@ Welcome to my [homepage](https://max.gripe/)! It serves as a platform for me to 
 
 ## How it works
 
-When I write an article in Markdown and place it in the `/markdown/` folder, the rest happens automatically. GitHub Actions detects changes pushed to the repository, triggers the build process, and deploys the updated site to Azure Static Web Apps.
+When I write an article in Markdown and place it in the `/markdown/` folder, the rest happens automatically. GitHub Actions detects changes pushed to the repository, triggers the build process, and deploys the updated site.
 
 ## Contributing
 
