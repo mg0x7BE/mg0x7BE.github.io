@@ -45,8 +45,6 @@ module diskUtils =
             let destFile = Path.Combine(Constants.outputImagesDir, fileName)
             File.Copy(file, destFile, true))
 
-
-
 module urlUtils =
     let toUrlFriendly (input: string) =
         input.ToLowerInvariant()

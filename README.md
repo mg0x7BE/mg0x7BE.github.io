@@ -7,7 +7,7 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/MaxGripe/maxgripe.github.io)
 
 # Max Gripe's Homepage
-Welcome to my [homepage](https://maxgripe.github.io/)! It serves as a platform for me to share my links and thoughts. At the moment, I've got a really cool domain https://max.gripe linked to this site, but I won't live forever, so the address https://maxgripe.github.io is more future-proof.
+Welcome to my homepage! It serves as a platform for me to share my links and thoughts. At the moment, I've got a really cool domain https://max.gripe linked to this site, but I won't live forever, so the address https://maxgripe.github.io might be more future-proof.
 
 ## Some technical details:
 
