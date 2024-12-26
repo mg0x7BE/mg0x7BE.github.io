@@ -19,17 +19,19 @@ jobs:
 
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 9
 
       - name: Build project
-        run: dotnet build HtmlGenerator.fsproj
+        run: dotnet build skunk-html.fsproj
 
       - name: Run F# code to generate HTML
-        run: dotnet run --project HtmlGenerator.fsproj
+        run: dotnet run --project skunk-html.fsproj
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "./output"
+          path: "./skunk-html-output"
 
       - name: Deploy to GitHub Pages
         id: deployment

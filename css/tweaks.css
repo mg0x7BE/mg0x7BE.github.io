@@ -1,0 +1,109 @@
+﻿:root {
+    --color-accent: #320078;
+    --color-accent-transparent: rgba(70, 0, 136, 0.3);
+    --color-bg: #0B0017;
+    --color-bg-secondary: #35007F;
+    --color-link: #E000C6;
+    --color-secondary: #64FFAB;
+    --color-secondary-accent: #00DF66;
+    --color-shadow: #000000;
+    --color-table: #6B03FF;
+    --color-text: #43e08a;
+    --color-text-secondary: #64FFAB;
+    --color-scrollbar: #64FFAB;
+    --font-family: 'JetBrains Mono';
+    --hover-brightness: 2;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    src: local(''),
+    url('../fonts/JetBrainsMono-Regular.woff2') format('woff2');
+}
+
+body {
+    background-color: var(--color-bg);
+    background-image: linear-gradient(160deg, var(--color-bg-secondary) 0%, var(--color-bg) 35%);
+    background-attachment: fixed;
+}
+
+nav a img {
+
+    border-style: outset;
+    border-color: var(--color-link);
+    border-width: 1px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+code,
+samp {
+    background-color: var(--color-accent-transparent);
+    font-family: var(--font-family);
+}
+
+blockquote,
+blockquote p {
+    display: block;
+    font-size: medium;
+    line-height: var(--line-height);
+    text-align: var(--justify-normal);
+    border-right: none;
+    border-left: 0.25rem solid var(--color-accent);
+    padding: 0 0 0 1rem;
+    margin-left: 0;
+    max-width: 100%;
+}
+
+blockquote p {
+    border-left: none;
+}
+
+blockquote footer {
+    color: var(--color-text);
+    display: block;
+    font-size: small;
+    line-height: var(--line-height);
+    padding: 1.5rem 0;
+}
+
+a {
+    text-decoration: none;
+    word-break: break-word;
+}
+
+* {
+    scrollbar-width: auto;
+}
+
+nav {
+    margin-bottom: 1rem;
+}
+
+p img,
+pre,
+pre code,
+pre samp {
+    max-width: 100%;
+}
+
+table td[align],
+table th[align] {
+    text-align: left !important;
+}
+
+table td[align="center"],
+table th[align="center"] {
+    text-align: center !important;
+}
+
+table td[align="right"],
+table th[align="right"] {
+    text-align: right !important;
+}
+
+
+
+
+
+

@@ -1,1 +1,0 @@
-<small>Generated using markdown and F# | Hosted on GitHub with Continuous Deployment (CD) | <a href="https://github.com/MaxGripe/maxgripe.github.io" target="_blank">Site repository</a> on GitHub</small>
