@@ -1,16 +1,17 @@
-﻿:root {
+:root {
     --color-accent: #320078;
-    --color-accent-transparent: rgba(70, 0, 136, 0.3);
-    --color-bg: #0B0017;
-    --color-bg-secondary: #35007F;
-    --color-link: #E000C6;
+    --color-accent-transparent: rgba(6, 41, 46, 0.3);
+    --color-bg: #1C2128;
+    --color-bg-secondary: #282F39;
+    --color-link: #A4D4AA;
     --color-secondary: #64FFAB;
     --color-secondary-accent: #00DF66;
     --color-shadow: #000000;
     --color-table: #6B03FF;
-    --color-text: #43e08a;
-    --color-text-secondary: #64FFAB;
-    --color-scrollbar: #64FFAB;
+    --color-text: #ebebeb;
+    --color-text-secondary: #E8EDBF;
+    --color-text-tertiary: #41ACA7;
+    --color-scrollbar: #587B82;
     --font-family: 'JetBrains Mono';
     --hover-brightness: 2;
 }
@@ -31,7 +32,7 @@ body {
 nav a img {
 
     border-style: outset;
-    border-color: var(--color-link);
+    border-color: var(--color-scrollbar);
     border-width: 1px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
@@ -102,8 +103,24 @@ table th[align="right"] {
     text-align: right !important;
 }
 
+hr {
+    background-color: var(--color-scrollbar);
+}
 
+h1 {
+    color: var(--color-text-secondary);
+}
 
+h2 {
+    color: var(--color-text-tertiary);
+}
 
+small {
+    color: var(--color-scrollbar);
+}
+
+.publications h1 {
+
+}
 
 
