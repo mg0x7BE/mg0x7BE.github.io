@@ -3,15 +3,15 @@
     --color-accent-transparent: rgba(6, 41, 46, 0.3);
     --color-bg: #1C2128;
     --color-bg-secondary: #282F39;
-    --color-link: #A4D4AA;
+    --color-link: #81F790;
     --color-secondary: #64FFAB;
     --color-secondary-accent: #00DF66;
     --color-shadow: #000000;
     --color-table: #6B03FF;
     --color-text: #ebebeb;
-    --color-text-secondary: #E8EDBF;
-    --color-text-tertiary: #41ACA7;
-    --color-scrollbar: #587B82;
+    --color-text-secondary: #F6FFAD;
+    --color-text-tertiary: #00EDE2;
+    --color-scrollbar: #3A8FA0;
     --font-family: 'JetBrains Mono';
     --hover-brightness: 2;
 }
