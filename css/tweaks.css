@@ -107,7 +107,7 @@ hr {
     background-color: var(--color-scrollbar);
 }
 
-h1 {
+h1, strong {
     color: var(--color-text-secondary);
 }
 
