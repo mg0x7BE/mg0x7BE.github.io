@@ -6,7 +6,7 @@
 ![GitHub forks](https://img.shields.io/github/forks/mg0x7BE/mg0x7BE.github.io)
 ![GitHub Repo stars](https://img.shields.io/github/stars/mg0x7BE/mg0x7BE.github.io)
 
-# [mg0x7BE.github.io](https://mg0x7be.github.io)
+# mg0x7be.github.io
 
 Personal site. Generated with [SkunkHTML](https://github.com/mg0x7BE/skunk-html).
 
