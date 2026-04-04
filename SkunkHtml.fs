@@ -9,7 +9,7 @@ module SkunkHtml
     let generateFinalHtml (head: string) (header: string) (footer: string) (content: string) (script: string) =
         $"""
         <!DOCTYPE html>
-        <html lang="{Config.siteLanguage}" color-mode="user">
+        <html lang="{Config.siteLanguage}">
         <head>
             {head}
         </head>
