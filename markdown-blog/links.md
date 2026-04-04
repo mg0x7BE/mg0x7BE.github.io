@@ -1,10 +1,10 @@
 # Links
 
-Below are the most important links related to SkunkHTML:
+You can catch me in different places around the Internet. Here are a few of them:
 
-* SkunkHTML repository on GitHub
-[https://github.com/mg0x7BE/skunk-html](https://github.com/mg0x7BE/skunk-html)
-* Discussions
-[https://github.com/mg0x7BE/skunk-html/discussions](https://github.com/mg0x7BE/skunk-html/discussions)
-* Issues
-[https://github.com/mg0x7BE/skunk-html/issues](https://github.com/mg0x7BE/skunk-html/issues)
+* GitHub  
+[https://github.com/mg0x7BE](https://github.com/mg0x7BE)
+* X  
+[https://x.com/mg0x7BE](https://x.com/mg0x7BE)
+* Steam  
+[https://steamcommunity.com/id/mg0x7BE](https://steamcommunity.com/id/mg0x7BE)
