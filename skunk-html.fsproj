@@ -10,11 +10,11 @@
         <Compile Include="SkunkUtils.fs" />
         <Compile Include="SkunkHtml.fs" />
         <Compile Include="Program.fs" />
-
+    
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Fsharp.Formatting" Version="21.0.0" />
+      <PackageReference Include="Fsharp.Formatting" Version="21.0.0" />
     </ItemGroup>
 
 </Project>
