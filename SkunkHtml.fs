@@ -138,7 +138,7 @@ module SkunkHtml
             $"""
         {frontPageContentHtml}
         <section class="publications">
-            <h1>blog entries</h1>
+            <h2>blog entries</h2>
             <ul>
             {listOfAllBlogArticlesContentHtml}
             </ul>
