@@ -1,7 +1,19 @@
+/* SkunkHTML Theme: Brutalist Terminal (modernized typography)
+   Color palette preserved, typography rebuilt for readability. */
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-display: swap;
+    src: local(''),
+    url('../fonts/JetBrainsMono-Regular.woff2') format('woff2');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
 :root {
-    /* Core colors - Brutalist Terminal */
     --color-accent: #1a1a1a;
-    --color-accent-transparent: rgba(255, 85, 255, 0.1);
+    --color-accent-transparent: rgba(255, 85, 255, 0.08);
     --color-bg: #291b3e;
     --color-bg-secondary: #18181b;
     --color-link: #55ffff;
@@ -13,107 +25,80 @@
     --color-text-secondary: #fafafa;
     --color-text-tertiary: #ff55ff;
     --color-scrollbar: #796790;
-    --font-family: 'JetBrains Mono', 'Berkeley Mono', 'Cascadia Code', monospace;
+
+    --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-mono: 'JetBrains Mono', 'Cascadia Code', 'Fira Code', monospace;
     --hover-brightness: 1.5;
-    --border-radius: 0; /* Kill all rounded corners */
+    --border-radius: 0;
+    --line-height: 1.5;
+    --width-content: 800px;
 }
 
-@font-face {
-    font-family: 'JetBrains Mono';
-    font-style: normal;
-    src: local(''),
-    url('../fonts/JetBrainsMono-Regular.woff2') format('woff2');
-}
-
-/* Import Inter for better readability in paragraphs */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
-
-/* Dark brutalist background */
+/* Background */
 body {
     background-color: var(--color-bg);
     background-image: linear-gradient(160deg, var(--color-bg-secondary) 0%, var(--color-bg) 35%);
     background-attachment: fixed;
-}
-
-/* Better readability for main content paragraphs */
-main p,
-ol:not(.publications ol) li,
-ul:not(.publications ul):not(nav ul) li {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    font-size: 1rem;
-    line-height: 1.4;
-    font-weight: 400;
-    /* Font rendering optimization for all platforms */
+    font-size: 1.05em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+}
+
+/* Content width */
+footer,
+header,
+main {
+    max-width: 800px;
+}
+
+/* Typography: body text */
+p, li, dd, dt, figcaption, blockquote {
+    line-height: 1.6;
+    letter-spacing: -0.011em;
+}
+
+p {
+    margin: 1em 0;
 }
 
 li p {
     margin: 0;
 }
 
-nav a img {
-    border-style: solid;
-    border-color: var(--color-scrollbar);
-    border-width: 1px;
-    box-shadow: 0 0 25px rgba(69, 53, 91, 1);  /* mniejszy blur, mocniejszy kolor */
+/* Typography: headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-mono);
+    line-height: 1.25;
+    letter-spacing: -0.02em;
 }
 
-img {
-    image-rendering: smooth;
+h1 {
+    font-size: 2.25rem;
+    color: var(--color-text-secondary);
 }
 
-code,
-samp {
-    background-color: var(--color-accent-transparent);
-    font-family: var(--font-family);
-    border-left: 2px solid var(--color-secondary);
-    padding-left: 0.5rem;
+h2 {
+    font-size: 1.5rem;
+    color: var(--color-text-tertiary);
 }
 
-/* Sharp blockquotes */
-blockquote,
-blockquote p {
-    display: block;
-    font-size: medium;
-    line-height: var(--line-height);
-    text-align: var(--justify-normal);
-    border-right: none;
-    border-left: 3px solid var(--color-secondary);
-    padding: 0 0 0 1rem;
-    margin-left: 0;
-    max-width: 100%;
-    background: rgba(255, 85, 255, 0.03);
-}
-
-blockquote p {
-    border-left: none;
-    background: none;
-}
-
-blockquote footer {
+h3 {
+    font-size: 1.2rem;
     color: var(--color-text);
-    display: block;
-    font-size: small;
-    line-height: var(--line-height);
-    padding: 1.5rem 0;
 }
 
-/* Links with glow effect */
-a {
-    text-decoration: none;
-    word-break: break-word;
-    transition: all 0.2s ease;
+h4, h5, h6 {
+    font-size: 1.05rem;
+    color: var(--color-text);
 }
 
-a:hover {
-    color: #ffffff;
-    text-shadow: 0 0 10px currentColor;
-    filter: brightness(var(--hover-brightness));
+strong, b {
+    color: var(--color-text-secondary);
+    font-weight: 600;
 }
 
-/* Terminal cursor effect only for main h1 */
+/* Terminal cursor on main h1 */
 main > h1::after {
     content: '_';
     animation: blink 1s infinite;
@@ -126,7 +111,212 @@ main > h1::after {
     51%, 100% { opacity: 0; }
 }
 
-/* Scrollbar styling */
+/* Links */
+a {
+    text-decoration: none;
+    word-break: break-word;
+    font-weight: 600;
+    transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px currentColor;
+    filter: brightness(var(--hover-brightness));
+}
+
+a:active {
+    transform: translate(1px, 1px);
+}
+
+a:focus-visible {
+    outline: 2px solid var(--color-secondary);
+    outline-offset: 2px;
+}
+
+/* Navigation */
+nav {
+    margin-bottom: 1rem;
+}
+
+nav a img {
+    border-style: solid;
+    border-color: var(--color-scrollbar);
+    border-width: 1px;
+    box-shadow: 0 0 25px rgba(69, 53, 91, 1);
+}
+
+img {
+    image-rendering: smooth;
+}
+
+/* Code: inline */
+code, samp {
+    font-family: var(--font-mono);
+    font-size: 0.875em;
+    background-color: var(--color-accent-transparent);
+    border-left: 2px solid var(--color-secondary);
+    padding: 0.1em 0.5em;
+}
+
+/* Code: blocks */
+pre {
+    background: #18181b;
+    border: 1px solid var(--color-scrollbar);
+    border-left: 3px solid var(--color-secondary);
+    margin: 1em 0;
+    padding: 1rem 0;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+pre code, pre samp {
+    background: transparent;
+    border: none;
+    font-size: 0.85em;
+    max-width: 100%;
+}
+
+/* Blockquotes */
+blockquote {
+    display: block;
+    font-size: 1rem;
+    text-align: left;
+    border-left: 3px solid var(--color-secondary);
+    padding: 0 0 0 1.25em;
+    margin: 1em 0;
+    max-width: 100%;
+    background: rgba(255, 85, 255, 0.03);
+}
+
+blockquote p {
+    border-left: none;
+    background: none;
+    font-size: inherit;
+}
+
+blockquote footer {
+    color: var(--color-text);
+    font-size: small;
+    padding: 1rem 0;
+}
+
+/* Lists */
+ul li::marker {
+    color: var(--color-secondary);
+}
+
+ol li::marker {
+    color: var(--color-link);
+}
+
+ul, ol {
+    padding-left: 1.5em;
+}
+
+/* Horizontal rule */
+hr {
+    background-color: var(--color-scrollbar);
+    height: 1px;
+    border: none;
+}
+
+/* Small text */
+small {
+    color: var(--color-scrollbar);
+}
+
+/* Publication date */
+.publication-date {
+    color: var(--color-scrollbar);
+    font-size: 0.9rem;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--color-scrollbar);
+}
+
+/* Blog list */
+.publications h2 {
+    margin-top: 1.5em;
+}
+
+.publications ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.publications ul li {
+    border-left: 2px solid transparent;
+    padding: 0.4em 0 0.4em 1rem;
+    transition: border-color 0.2s ease;
+    font-family: var(--font-mono);
+    line-height: 1.5;
+}
+
+.publications ul li a {
+    font-family: var(--font-family);
+}
+
+.publications ul li:hover {
+    border-left-color: var(--color-secondary);
+}
+
+/* Tables */
+table td[align], table th[align] {
+    text-align: left !important;
+}
+
+table td[align="center"], table th[align="center"] {
+    text-align: center !important;
+}
+
+table td[align="right"], table th[align="right"] {
+    text-align: right !important;
+}
+
+/* Images */
+p img {
+    max-width: 100%;
+}
+
+/* Selection */
+::selection {
+    background: var(--color-secondary);
+    color: var(--color-bg);
+}
+
+::-moz-selection {
+    background: var(--color-secondary);
+    color: var(--color-bg);
+}
+
+/* Buttons (brutalist) */
+button, input[type="submit"] {
+    background: var(--color-bg);
+    border: 1px solid var(--color-secondary);
+    color: var(--color-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: all 0.2s ease;
+}
+
+button:hover, input[type="submit"]:hover {
+    background: var(--color-secondary);
+    color: var(--color-bg);
+    box-shadow: 0 0 15px rgba(255, 85, 255, 0.5);
+}
+
+button:focus-visible, input:focus-visible, textarea:focus-visible {
+    outline: 2px solid var(--color-secondary);
+    outline-offset: 2px;
+}
+
+/* Remove border-radius globally */
+nav ul li ul, aside, button, input, select, textarea, table, dialog, form {
+    border-radius: 0 !important;
+}
+
+/* Scrollbar */
 * {
     scrollbar-width: thin;
     scrollbar-color: var(--color-scrollbar) var(--color-bg);
@@ -150,165 +340,8 @@ main > h1::after {
     background-color: var(--color-secondary);
 }
 
-/* Navigation spacing */
-nav {
-    margin-bottom: 1rem;
-}
-
-/* Remove borders radius globally */
-nav ul li ul,
-aside,
-button,
-input,
-select,
-textarea,
-table,
-dialog,
-form {
-    border-radius: 0 !important;
-}
-
-/* Images and code responsiveness */
-p img,
-pre,
-pre code,
-pre samp {
-    max-width: 100%;
-}
-
-/* Pre blocks with terminal styling */
-pre {
-    background: #18181b;
-    border: 1px solid var(--color-scrollbar);
-    border-left: 3px solid var(--color-secondary);
-}
-
-pre code {
-    background: transparent;
-    border: none;
-}
-
-/* Table alignment fixes */
-table td[align],
-table th[align] {
-    text-align: left !important;
-}
-
-table td[align="center"],
-table th[align="center"] {
-    text-align: center !important;
-}
-
-table td[align="right"],
-table th[align="right"] {
-    text-align: right !important;
-}
-
-/* Horizontal rule */
-hr {
-    background-color: var(--color-scrollbar);
-    height: 1px;
-    border: none;
-    margin: 0;
-}
-
-/* Header colors */
-h1, strong {
-    color: var(--color-text-secondary);
-}
-
-h2 {
-    color: var(--color-text-tertiary);
-    padding-bottom: 0.3rem;
-}
-
-h3, h4, h5, h6 {
-    color: var(--color-text);
-}
-
-/* Small text */
-small {
-    color: var(--color-scrollbar);
-}
-
-/* Publication date styling */
-.publication-date {
-    color: var(--color-scrollbar);
-    font-size: 0.9rem;
-    margin-top: 2rem;
-    padding-top: 1rem;
-    border-top: 1px solid var(--color-scrollbar);
-}
-
-/* Blog list specific */
-.publications ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.publications ul li {
-    border-left: 2px solid transparent;
-    padding-left: 1rem;
-    transition: all 0.2s ease;
-}
-
-
-
-/* Selection color */
-::selection {
-    background: var(--color-secondary);
-    color: var(--color-bg);
-}
-
-::-moz-selection {
-    background: var(--color-secondary);
-    color: var(--color-bg);
-}
-
-/* Button overrides for brutalist style */
-button,
-input[type="submit"] {
-    background: var(--color-bg);
-    border: 1px solid var(--color-secondary);
-    color: var(--color-secondary);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    transition: all 0.2s ease;
-}
-
-button:hover,
-input[type="submit"]:hover {
-    background: var(--color-secondary);
-    color: var(--color-bg);
-    box-shadow: 0 0 15px rgba(255, 85, 255, 0.5);
-}
-
-/* Active state */
-a:active,
-button:active {
-    transform: translate(1px, 1px);
-}
-
-/* Focus visible for accessibility */
-a:focus-visible,
-button:focus-visible,
-input:focus-visible,
-textarea:focus-visible {
-    outline: 2px solid var(--color-secondary);
-    outline-offset: 2px;
-}
-
-/* Terminal-style list markers */
-ul li::marker {
-    color: var(--color-secondary);
-}
-
-/* Code syntax highlighting override */
+/* Syntax highlighting */
 .microlight {
     background: #18181b !important;
     color: var(--color-text) !important;
-}
-
-ol li::marker {
-    color: #55ffff;  /* twój niebieski */
 }
