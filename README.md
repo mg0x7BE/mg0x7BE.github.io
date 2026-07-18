@@ -1,5 +1,4 @@
 
-[![Azure Static Web Apps CI/CD](https://github.com/mg0x7BE/mg0x7BE.github.io/actions/workflows/main.yml/badge.svg)](https://github.com/mg0x7BE/mg0x7BE.github.io/actions/workflows/main.yml)
 ![GitHub repo size](https://img.shields.io/github/repo-size/mg0x7BE/mg0x7BE.github.io)
 ![GitHub License](https://img.shields.io/github/license/mg0x7BE/mg0x7BE.github.io)
 ![GitHub Created At](https://img.shields.io/github/created-at/mg0x7BE/mg0x7BE.github.io)
